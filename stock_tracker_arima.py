@@ -22,7 +22,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 import math
 import numpy as np
 
-df = pd.read_csv(r"C:\Users\jfoma\Dropbox\Python\MDB.csv",index_col='Date',parse_dates=(True))
+df = pd.read_csv(r"data".csv",index_col='Date',parse_dates=(True))
 
 df_close = df['Close']
 
