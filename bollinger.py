@@ -7,7 +7,7 @@ https://www.fidelity.com/learning-center/trading-investing/technical-analysis/te
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("",index_col='Date',parse_dates=(True))
+df = pd.read_csv("data.csv",index_col='Date',parse_dates=(True))
 df_close = df['Close']
 
 st_av = df_close.sort_index(ascending=False).head(10).mean()
